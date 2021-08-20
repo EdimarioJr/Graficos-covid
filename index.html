@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Autores: Edwildson Coelho Rodrigues - Edimário Silva Moura Júnior-->
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+
+    <title>Graficos Covid-19</title>
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+  </head>
+
+  <body>
+    <h2 class="title">
+      <center>Gráficos Covid-19 - Created by Edwildson e Edimário</center>
+    </h2>
+
+    <div>
+      <center>
+        <h1>Infectados por Região</h1>
+        <svg style="width: 1500px; height: 600px" class="canvas" id="base">
+          <rect
+            x="50"
+            y="10"
+            width="1400"
+            height="480"
+            style="fill: transparent; stroke: black; stroke-width: 2"
+            class="graph_out"
+          />
+        </svg>
+        <h1>Mortos por Região</h1>
+        <svg
+          style="width: 1500px; height: 600px"
+          class="canvas"
+          id="baseDeceased"
+        >
+          <rect
+            x="50"
+            y="10"
+            width="1400"
+            height="480"
+            style="fill: transparent; stroke: black; stroke-width: 2"
+            class="graph_out"
+          />
+        </svg>
+      </center>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+      $(function () {
+        $(document).tooltip();
+      });
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>
